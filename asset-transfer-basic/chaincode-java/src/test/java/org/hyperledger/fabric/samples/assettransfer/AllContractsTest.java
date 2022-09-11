@@ -24,7 +24,7 @@ import org.junit.jupiter.api.Nested;
 import org.junit.jupiter.api.Test;
 import org.mockito.InOrder;
 
-public final class AssetTransferTest {
+public final class AllContractsTest {
 
     private final class MockKeyValue implements KeyValue {
 
@@ -91,7 +91,7 @@ public final class AssetTransferTest {
 
     @Test
     public void invokeUnknownTransaction() {
-        AssetTransfer contract = new AssetTransfer();
+        AllContracts contract = new AllContracts();
         Context ctx = mock(Context.class);
 
         Throwable thrown = catchThrowable(() -> {
@@ -110,7 +110,7 @@ public final class AssetTransferTest {
 
         @Test
         public void whenAssetExists() {
-            AssetTransfer contract = new AssetTransfer();
+            AllContracts contract = new AllContracts();
             Context ctx = mock(Context.class);
             ChaincodeStub stub = mock(ChaincodeStub.class);
             when(ctx.getStub()).thenReturn(stub);
@@ -124,7 +124,7 @@ public final class AssetTransferTest {
 
         @Test
         public void whenAssetDoesNotExist() {
-            AssetTransfer contract = new AssetTransfer();
+            AllContracts contract = new AllContracts();
             Context ctx = mock(Context.class);
             ChaincodeStub stub = mock(ChaincodeStub.class);
             when(ctx.getStub()).thenReturn(stub);
@@ -142,7 +142,7 @@ public final class AssetTransferTest {
 
     @Test
     void invokeInitLedgerTransaction() {
-        AssetTransfer contract = new AssetTransfer();
+        AllContracts contract = new AllContracts();
         Context ctx = mock(Context.class);
         ChaincodeStub stub = mock(ChaincodeStub.class);
         when(ctx.getStub()).thenReturn(stub);
@@ -163,7 +163,7 @@ public final class AssetTransferTest {
 
         @Test
         public void whenAssetExists() {
-            AssetTransfer contract = new AssetTransfer();
+            AllContracts contract = new AllContracts();
             Context ctx = mock(Context.class);
             ChaincodeStub stub = mock(ChaincodeStub.class);
             when(ctx.getStub()).thenReturn(stub);
@@ -181,7 +181,7 @@ public final class AssetTransferTest {
 
         @Test
         public void whenAssetDoesNotExist() {
-            AssetTransfer contract = new AssetTransfer();
+            AllContracts contract = new AllContracts();
             Context ctx = mock(Context.class);
             ChaincodeStub stub = mock(ChaincodeStub.class);
             when(ctx.getStub()).thenReturn(stub);
@@ -195,7 +195,7 @@ public final class AssetTransferTest {
 
     @Test
     void invokeGetAllAssetsTransaction() {
-        AssetTransfer contract = new AssetTransfer();
+        AllContracts contract = new AllContracts();
         Context ctx = mock(Context.class);
         ChaincodeStub stub = mock(ChaincodeStub.class);
         when(ctx.getStub()).thenReturn(stub);
@@ -217,7 +217,7 @@ public final class AssetTransferTest {
 
         @Test
         public void whenAssetExists() {
-            AssetTransfer contract = new AssetTransfer();
+            AllContracts contract = new AllContracts();
             Context ctx = mock(Context.class);
             ChaincodeStub stub = mock(ChaincodeStub.class);
             when(ctx.getStub()).thenReturn(stub);
@@ -231,7 +231,7 @@ public final class AssetTransferTest {
 
         @Test
         public void whenAssetDoesNotExist() {
-            AssetTransfer contract = new AssetTransfer();
+            AllContracts contract = new AllContracts();
             Context ctx = mock(Context.class);
             ChaincodeStub stub = mock(ChaincodeStub.class);
             when(ctx.getStub()).thenReturn(stub);
@@ -252,7 +252,7 @@ public final class AssetTransferTest {
 
         @Test
         public void whenAssetExists() {
-            AssetTransfer contract = new AssetTransfer();
+            AllContracts contract = new AllContracts();
             Context ctx = mock(Context.class);
             ChaincodeStub stub = mock(ChaincodeStub.class);
             when(ctx.getStub()).thenReturn(stub);
@@ -266,7 +266,7 @@ public final class AssetTransferTest {
 
         @Test
         public void whenAssetDoesNotExist() {
-            AssetTransfer contract = new AssetTransfer();
+            AllContracts contract = new AllContracts();
             Context ctx = mock(Context.class);
             ChaincodeStub stub = mock(ChaincodeStub.class);
             when(ctx.getStub()).thenReturn(stub);
@@ -287,7 +287,7 @@ public final class AssetTransferTest {
 
         @Test
         public void whenAssetDoesNotExist() {
-            AssetTransfer contract = new AssetTransfer();
+            AllContracts contract = new AllContracts();
             Context ctx = mock(Context.class);
             ChaincodeStub stub = mock(ChaincodeStub.class);
             when(ctx.getStub()).thenReturn(stub);
